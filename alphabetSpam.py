@@ -1,0 +1,5 @@
+line = str(input())
+print(line.count('_') / len(line))
+print(sum([int(c.islower()) for c in line]) / len(line))
+print(sum([int(c.isupper()) for c in line]) / len(line))
+print((len(line)-line.count('_')-sum([int(c.islower()) for c in line])-sum([int(c.isupper()) for c in line])) / len(line))
